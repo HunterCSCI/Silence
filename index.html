@@ -3,10 +3,9 @@
 <!-- Established 09/29/2014 by Samson Fung and Gabriel Chai-->
 
 <html>
-
 	<style>
 	body {
-		background-color: #443344;
+		background-color: #441022;
 	}
 	h1 {
 		color: white;
@@ -37,14 +36,19 @@
 
 	<head>
 		<title> Silence </title>
-		<script type "application/javascript" src = "worldGrid.js"></script>
 	</head>
 
-	<body onload = "draw();">
+	<body>
 		<h1>Welcome to the world of Silence</h1>
 		<h2>by Samson Fung and Gabriel Chai</h2>
-		<canvas id ="canvas" width = "1200" height = "1800" ></canvas>
-		<!-- <script language ="JavaScript" src="worldGrid.js"></script> -->
+		<canvas id ="canvas" width = "1200" height = "1200" ></canvas>
+		<script>
+			var c = document.getElementById("canvas");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "#FFFFFF";
+			ctx.fillRect(0, 0, 1200, 1200);
+			ctx.drawImage("sword.jpeg", 10, 10);
+		</script>
 		<h3> Copyright 2014 - Samson Fung and Gabriel Chai</h3>
 	</body>
 </html>
