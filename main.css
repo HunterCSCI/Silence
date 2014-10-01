@@ -10,7 +10,7 @@
 	}
 	h2 {
 		color: white;
-		font-size: 20px;
+		font-size: 15px;
 		text-align: center;
 	}
 	script { 
@@ -22,7 +22,7 @@
 	}
 	h3 {
 		position: absolute;
-		text-align: right;
+		text-align: left;
 		font-size: 12px;
-		color: white;
+		color: gray;
 	}
