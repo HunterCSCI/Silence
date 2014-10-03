@@ -2,6 +2,17 @@
 
 /*
 
+map.loadMap(map1);
+	Load default map
+character.character();
+	Spawn new character with base stats and equipment using a constructor
+	Set new character's position
+
+*/
+
+
+/*
+
 character.checkMove();
 	Interpret new position if input command is legal
 	Check if move is legal (unpassable terrain)
