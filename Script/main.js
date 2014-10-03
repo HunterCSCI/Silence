@@ -12,7 +12,10 @@ Add any separate scripts with:
 EvaluateScript(scriptName);
 */
 
-EvaluateScript(keys.js);
+EvaluateScript("keys.js");
+EvaluateScript("character.js");
+
+var currentGame = 0;
 
 function Game() {
 	Intro();
@@ -23,5 +26,11 @@ var fps = GetFrameRate()||60;
 var currentLevel = 0;
 
 function gameLoop(num){
+	while (character.isAlive === true){
+		loadLevel(currentLevel);
+	}
 
+		// Useful variable to add replay value?
+		// Perhaps make the game harder with each respawn, in a rogue-legacy esque way.
+	currentGame++;
 }

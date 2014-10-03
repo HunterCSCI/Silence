@@ -1,5 +1,4 @@
 // Acceptable Key Input
-
 var CKEY_W = KEY_W;
 var CKEY_A = KEY_A;
 var CKEY_S = KEY_S;
@@ -11,3 +10,5 @@ var CKEY_J = KEY_J;
 var CKEY_K = KEY_K;
 // To be programmed for 'shield'
 var CKEY_L = KEY_L;
+// To be programmed for 'inventory'
+var CKEY_I = KEY_I;

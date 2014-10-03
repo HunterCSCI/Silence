@@ -36,6 +36,11 @@ character.currentBlock = 0;
 character.posX = 0;
 character.posY = 0;
 character.isAlive = true;
+character.invulnerability = false;
+	// Toggle for cutscenes or upon hit.
+	// Based on ingame time?
+// character.speed = ?
+	// Should probably be boxes/s
 
 character.setCurrentHealth = function(numHealth){
 	this.currentHealth = numHealth;
@@ -66,7 +71,14 @@ character.takeDamage = function(enemyDamage){
 	}
 }
 
-character.findHeart = function(sizeHeart){
+character.findHeartContainer = function(heartSize){
 	this.maxHealth += sizeHeart;
 	this.currentHealth += sizeHeart;
+}
+
+character.findHeart = function(heartSize){
+	this.currentHealth += sizeHeart;
+	if (this.currentHealth < this.maxHealth){
+		this.currentHealth = this.maxHealth;
+	}
 }

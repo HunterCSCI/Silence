@@ -1,7 +1,16 @@
 // List of Possible Events:
 
 /*
+	EvaluateScript(keys.js);
+*/
 
+
+/* Startup Functions
+	Intro();
+
+*/
+
+/*
 map.loadMap(map1);
 	Load default map
 character.character();
@@ -13,15 +22,13 @@ character.character();
 
 /*
 
+To be implemented:
+
 character.checkMove();
 	Interpret new position if input command is legal
 	Check if move is legal (unpassable terrain)
 character.move();
 	Cause character to move if checkMove returns true;
-character.takeDamage(amount);
-	Cause character to lose health
-character.heal(item);
-	Heal amount based on item
 character.attack();
 	Attack if:
 		Weapon is equipped
@@ -32,13 +39,29 @@ character.attack();
 	Interpret damage based on:
 		Enemy armor
 		Current weapon
-character.findWeapon();
+chracter.speed = propervalue;
+	Set the speed at which character can move.
+character.invulnerability = false;
+	To be invoked when character is hit, or picks up the proper item
+character.	
+*/
+
+
+/*
+Complete:
+
+character.changeWeapon(weaponName);
 	Replace character.currentWeapon();
 	Change character.currentDamage();
-character.findArmor();
-	Replace character.armor;
-	Change character.maxHealth;
-	? Increment currentHealth if:
-		Not already full	
-
+character.changeArmor(armorName);
+	Replace character.currentArmor;
+	Change character.currentBlock;
+character.takeDamage(amount);
+	Cause character to lose health
+character.findHeart(sizeHeart);
+	Heal amount based on item
+	Check if health would be greater than max health
+character.findHeartContainer(sizeHeart);
+	Increase max health based on container found
+	Increase current health by container (but not above max)
 */
