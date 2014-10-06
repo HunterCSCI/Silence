@@ -1,10 +1,10 @@
 	body {
-		background-color: #441022;
+		background-color: #441622;
 	}
 	h1 {
 		color: white;
 		font-size: 28px;
-		margin-top: 50px;
+		margin: 0 50 auto;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -25,4 +25,5 @@
 		text-align: left;
 		font-size: 12px;
 		color: gray;
+		text-decoration: none;
 	}
