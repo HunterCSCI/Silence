@@ -1,3 +1,14 @@
+// Necessary Knowledge:
+
+/*
+	Usage of:
+		Heroku (node.js)
+		JavaScript
+		HTML
+		CSS
+		Possibly Tiled (For generating maps) - Though possible without.
+*/
+
 // List of Possible Events:
 
 /*
@@ -19,10 +30,11 @@ character.character();
 
 */
 
+//To be implemented:
 
 /*
 
-To be implemented:
+Character Class / Functions:
 
 character.checkMove();
 	Interpret new position if input command is legal
@@ -43,9 +55,31 @@ chracter.speed = propervalue;
 	Set the speed at which character can move.
 character.invulnerability = false;
 	To be invoked when character is hit, or picks up the proper item
-character.	
 */
 
+/*
+
+Monster Class:
+	monster.type
+	monster.name
+	monster.armor
+	monster.damage
+	monster.size
+	monster.ifCollision
+
+*/
+
+/*
+
+Treasure / Items Class:
+	treasure.type
+	treasure.name
+	treasure.openEvent
+	
+	item.type
+	item.name
+	item.openEvent
+*/
 
 /*
 Complete:
