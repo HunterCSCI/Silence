@@ -1,6 +1,9 @@
 // Character related functions
 // Character Object
 
+var items = {};
+
+// Add weights to items?
 var woodenSword = {
 	damage: 1;
 }
@@ -25,7 +28,8 @@ var steelArmor = {
 	block: 1.5;
 }
 
-var character = {}
+var character = {};
+character.inventory = {};
 character.maxHealth = 3;
 character.currentHealth = 3;
 character.currentMap = 1;
@@ -36,7 +40,7 @@ character.currentBlock = 0;
 character.posX = 0;
 character.posY = 0;
 character.isAlive = true;
-character.invulnerability = false;
+character.invulnerable = false;
 	// Toggle for cutscenes or upon hit.
 	// Based on ingame time?
 // character.speed = ?
@@ -81,4 +85,12 @@ character.findHeart = function(heartSize){
 	if (this.currentHealth < this.maxHealth){
 		this.currentHealth = this.maxHealth;
 	}
+}
+
+character.takeLoot = function(lootType){
+	if (character.lootType >= 0){
+		character.lootType++;
+	}
+	else 
+		character.inventory.push(lootType);
 }

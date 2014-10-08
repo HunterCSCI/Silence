@@ -1,6 +1,19 @@
 // Acceptable Key Input
 // event.keycodes;
 
+var player = {
+	input:{
+		left: false,
+		right: false,
+		up: false,
+		down: false,
+		jump: false,
+		shield: false,
+		map: false,
+		inventory: false
+	}
+}
+
 var KEYS = {
 	BACKSPACE: 8,
     TAB:       9,
