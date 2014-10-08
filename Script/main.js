@@ -17,11 +17,6 @@ EvaluateScript(scriptName);
 
 var canvas = document.getElementById("mainCanvas");
 var	ctx = canvas.getContext("2d");
-	ctx.fillStyle = "#000000";
-	ctx.fillRect(20,20,150,100);
-// Intro screen
-
-   //ctx.drawImage("img/bg.jpg", 0, 0, 640, 480);
 
 //canvas.addEventListener("mousedown",initiateIntro());
 
