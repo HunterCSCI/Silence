@@ -1,3 +1,5 @@
+All sourced from opengameart.org (Also known as OGA).
+
 sheet_6.png:
 	"Tuxemon Tileset" by Buch @ http://blog-buch.rhcloud.com
 overworld_1.png:
@@ -15,3 +17,6 @@ characters_7.png
 		PUNCH: 14,12 (again, you might use them in the order 12,14,12)
 		RUN: 15-18
 		CLIMB: 19-22
+
+background.jpg
+	"Simple Red Background" by Anya82 @ anya82@deviantart.com

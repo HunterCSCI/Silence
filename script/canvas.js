@@ -15,8 +15,21 @@ var canvas = document.getElementById("mainCanvas");
 			
 			
 var img = new Image();
-canvas.onclick = function(){
+
+img.onload = function(){
 	ctx.drawImage(img, 0, 0);
 }
+img.src = "img/background.jpg";
 
-img.src = "img/bg.jpg";
+
+// Incomplete function to trigger menu
+// Maybe have the symbol fade in and out?
+
+/*
+document.onclick = function(){
+	ctx.font = '24px Arial';
+	ctx
+	ctx.textAlign = 'center';
+	ctx.fillText('Silence', 0, 0);
+}
+*/
