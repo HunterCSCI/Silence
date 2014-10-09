@@ -6,6 +6,8 @@
 		JavaScript
 		HTML
 		CSS
+		jQuery v 2.1.1 // NOTE: Currently used version of jQuery will not function with IE browers
+		If necessary, revert back to jQuery v1.11.1
 		Possibly Tiled (For generating maps) - Though possible without.
 */
 
